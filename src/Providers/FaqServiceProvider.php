@@ -16,36 +16,20 @@ Class FaqServiceProvider extends ServiceProvider{
 
     public function register()
     {
-        $this->mergeConfig();
+        
     }
 
-    private function mergeConfig()
-    {
-        $path = $this->getConfigPath();
-        $this->mergeConfigFrom($path, 'faq');
-    }
-
-    private function publishConfig()
-    {
-        $path = $this->getConfigPath();
-        $this->publishes([$path => config_path('faq.php')], 'config');
-    }
 
     private function publishMigrations()
     {
         $path = $this->getMigrationsPath();
-        $this->publishes([$path => database_path('migrations')], 'migrations');
+        $this->publishes([$path => database_path('migrations')], 'faq-migrations');
     }
 
     private function publishViews()
     {
         $path = $this->getViewsPath();
-        $this->publishes([$path => resource_path('views')], 'views');
-    }
-
-    private function getConfigPath()
-    {
-        return __DIR__ . '/../config/faq.php';
+        $this->publishes([$path => resource_path('views')], 'faq-viewa');
     }
 
     private function getMigrationsPath()
