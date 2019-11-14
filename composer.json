@@ -14,6 +14,13 @@
             "Glumbo\\Faq\\":"src"
         }
     },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "Glumbo\\Faq\\Providers\\FaqServiceProvider"
+            ]
+        }
+    },
     "license": "MIT",
     "authors": [
         {
