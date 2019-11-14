@@ -34,12 +34,12 @@ Class FaqServiceProvider extends ServiceProvider{
 
     private function getMigrationsPath()
     {
-        return __DIR__ . '/../database/migrations/';
+        return __DIR__ . '../../database/migrations/';
     }
 
     private function getViewsPath()
     {
-        return __DIR__ . '/../resource/views/';
+        return __DIR__ . '../../resource/views/';
     }
 }
 ?>
