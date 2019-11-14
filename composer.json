@@ -3,7 +3,7 @@
     "description": "Glumbo frequently asked questions",
     "type": "library",
     "require": {
-        "illuminate/support": "^7.0@dev",
+        "illuminate/support": "^6.5.1@dev",
         "php": "^7.3"
     },
     "require-dev": {
